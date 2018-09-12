@@ -1,18 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
+using AWC_Platoon_Optimizer.DAL;
 using Microsoft.AspNetCore.Mvc;
 using AWC_Platoon_Optimizer.Models;
+using AWC_Platoon_Optimizer.Services;
 
 namespace AWC_Platoon_Optimizer.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly AwcContext _dbContext;
+        private readonly ApiService _apiService = new ApiService();
+
         public IActionResult Index()
         {
-            return View();
+            var token = _apiService.GetToken().Result;
+            var response = _apiService.GetApiCategories(token.Content).Result;
+
+            ViewBag.Content = response;
+
+            return View();                   
         }
 
         public IActionResult About()
@@ -38,6 +44,11 @@ namespace AWC_Platoon_Optimizer.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public void Dispose()
+        {
+            _dbContext.Dispose();
         }
     }
 }

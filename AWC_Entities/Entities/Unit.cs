@@ -4,14 +4,15 @@ using System.Text;
 
 namespace AWC_Entities.Entities
 {
-    public class Unit : EntityBase
+    public class Unit
     {
+        public string Id { get; set; }
         public string Name { get; set; }
         public ForceAlignment ForceAlignment { get; set; }
         public CombatType CombatType { get; set; }
         public bool Obtainable { get; set; }
         public string TextId { get; set; }
-        public virtual ICollection<Category> Categories { get; set; }
+        public IEnumerable<Unit_Category> Categories { get; set; }
     }
 
     public enum ForceAlignment

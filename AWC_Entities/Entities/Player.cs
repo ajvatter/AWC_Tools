@@ -4,10 +4,11 @@ using System.Text;
 
 namespace AWC_Entities.Entities
 {
-    public class Player : EntityBase
+    public class Player
     {
+        public string Id { get; set; }
         public string Name { get; set; }
-        public int Level { get; set; }        
+        public int Level { get; set; }
         public GuildMemberLevel GuildMemberLevel { get; set; }
         public virtual Guild Guild { get; set; }
     }

@@ -4,11 +4,11 @@ using System.Text;
 
 namespace AWC_Entities.Entities
 {
-    public class Category : EntityBase
+    public class Category 
     {
-        public string TextId { get; set; }
+        public string Id { get; set; }        
         public string Name { get; set; }
         public bool Visible { get; set; }
-        public virtual ICollection<Unit> Units { get; set; }
+        public IEnumerable<Unit_Category> Units { get; set; }
     }
 }

@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AWC_Entities", "AWC_Entities\AWC_Entities.csproj", "{16FDE71D-F6C3-40CB-944C-B1CCE9C9A466}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AWC_Platoon_Optimizer", "AWC_Platoon_Optimizer\AWC_Platoon_Optimizer.csproj", "{53F3AE43-F390-45DF-BD7F-C47875B49935}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWC_Platoon_Optimizer", "AWC_Platoon_Optimizer\AWC_Platoon_Optimizer.csproj", "{5F257B48-B866-4C2D-8274-7EE2E68197BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{16FDE71D-F6C3-40CB-944C-B1CCE9C9A466}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16FDE71D-F6C3-40CB-944C-B1CCE9C9A466}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16FDE71D-F6C3-40CB-944C-B1CCE9C9A466}.Release|Any CPU.Build.0 = Release|Any CPU
-		{53F3AE43-F390-45DF-BD7F-C47875B49935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{53F3AE43-F390-45DF-BD7F-C47875B49935}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{53F3AE43-F390-45DF-BD7F-C47875B49935}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{53F3AE43-F390-45DF-BD7F-C47875B49935}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F257B48-B866-4C2D-8274-7EE2E68197BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F257B48-B866-4C2D-8274-7EE2E68197BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F257B48-B866-4C2D-8274-7EE2E68197BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F257B48-B866-4C2D-8274-7EE2E68197BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
